@@ -1,0 +1,25 @@
+<h1> Homework 5 </h1>
+
+<h3>Cats</h3>
+<% @cats.each do |cat|%>
+	<%= cat.name%>
+</br>
+<% end %>
+
+<h3>Users</h3>
+<% @users.each do |user|%>
+	<%= user.username%>
+	<%= user.email%>
+	<%= user.age%>
+</br>
+<% end %>
+
+<h3>Todos</h3>
+<% @todos.each do |todo|%>
+	<%= todo.tasks%>
+	<%= todo.finished%>
+</br>
+<% end %>
+</br>
+<%= link_to 'Add Todo', '/todo/new' %>
+

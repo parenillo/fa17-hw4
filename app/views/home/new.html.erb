@@ -1,0 +1,14 @@
+<h1>Add Todo</h1>
+
+<%= form_tag('/todo') do %>
+  <%= label_tag(:tasks, "Task") %>
+  <%= text_field_tag(:tasks, nil, placeholder: @placeholder_task) %>
+
+  <%= label_tag(:finished, "Finished") %>
+  <%= text_field_tag(:finished, nil, placeholder: @placeholder_finished) %>
+
+
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+
+  <%= submit_tag("Create Todo") %>
+<% end %>
