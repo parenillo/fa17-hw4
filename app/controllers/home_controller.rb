@@ -1,7 +1,6 @@
 class HomeController < ApplicationController
 	def new
-		@placeholder_task = 'blep'
-		@placeholder_finished = 'false'
+		@placeholder_task = 'study?'
 	end
 	def show
 		@cats = Cat.all

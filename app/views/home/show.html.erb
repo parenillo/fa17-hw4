@@ -1,12 +1,12 @@
-<h1> Homework 5 </h1>
+<h1><u> Homework 5 </u></h1>
 
-<h3>Cats</h3>
+<h3><u>Cats</u></h3>
 <% @cats.each do |cat|%>
 	<%= cat.name%>
 </br>
 <% end %>
 
-<h3>Users</h3>
+<h3><u>Users</u></h3>
 <% @users.each do |user|%>
 	<%= user.username%>
 	<%= user.email%>
@@ -14,10 +14,11 @@
 </br>
 <% end %>
 
-<h3>Todos</h3>
+<h3><u>Todos</u></h3>
 <% @todos.each do |todo|%>
+	<%= check_box_tag('finished', todo.id, todo.finished)%>
 	<%= todo.tasks%>
-	<%= todo.finished%>
+	
 </br>
 <% end %>
 </br>

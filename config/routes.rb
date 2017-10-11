@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   get '/', to: 'home#show'
   get '/todo/new', to: 'home#new'
   post '/todo', to: 'home#create'
-
+  
 end
